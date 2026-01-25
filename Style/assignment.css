@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: #1A0B2E;
+}
 nav {
   background-color: #412567;
   height: 92px;
@@ -20,6 +23,10 @@ nav ul li a {
   text-decoration: none;
   color: #ffffff;
   margin: 20px;
+}
+.logo span{
+  color: #ffffff;
+  background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
 }
 nav .logo {
   color: #ffffff;
@@ -43,16 +50,105 @@ nav .logo {
     background-image: url("../Images/hero-bg.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: grid;
     align-items: center;
     justify-content: center;
 }
 section .header{
-    /* width: 100px; */
-    /* height: 100px; */
+    height: 50px;
     background-image: url("../Images/hero-circle.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+}
+.podcast{
+  height: 550px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.podcast .About{
+  text-align: center;
+  color: #ffffff;
+}
+.podcast .About h2{
+  font-size: 40px;
+  padding: 10px;
+}
+.podcast .About p{
+  line-height: 30px;
+}
+.podcast .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.podcast .user h1{
+  color: #00FF88;
+  font-size: 40px;
+}
+.podcast .user h5{
+  color: #ffffff;
+}
+.Quality{
+  height: 1200px;
+  background-color: #230E3D ;
+  color: #ffffff;
+}
+.Quality .mobile{
+  background: #000;
+  height: 800px;
+  /* display: grid;
+  align-items: center;
+  justify-content: center; */
+}
+/* .Quality .resource{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 500px 50px ;  
+  background-color: #00FF88;
+  border: 2px solid beige;
+  border-radius: 5px;
+} */
+.Quality .item{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 500px 50px ;   
+  background-color: #00FF88;
+  border: 2px solid beige;
+  border-radius: 5px;
+}
+footer{
+  height: 300px;
+  background-image: url("../Images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+footer h1{
+  margin-bottom: 20px;
+  font-size:70px;
+  text-align: center;
+}
+footer .media{
+  display: flex;
+  gap: 30px;
+}
+footer .media a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+footer p{
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  margin: 30px;
 }
