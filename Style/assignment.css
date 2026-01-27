@@ -95,43 +95,84 @@ section .header {
 .podcast .user h5 {
   color: #ffffff;
 }
-.Quality {
-  height: 1100px;
+.Why-TechWave {
+  height: 900px;
   background-color: #230e3d;
   color: #ffffff;
 }
-.Quality h1 {
+.Why-TechWave h1 {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px;
 }
-.Quality .audio {
-  height: 1000px;
-  /* display: grid; */
-  /* align-items: center; */
-  /* justify-content: center; */
+.Why-TechWave h3{
+  margin: 5px;
+  font-size: 22px;
 }
-.Quality .Choose {
-  height: 600px;
-  display: flex;
-  align-items: center;
-  /* flex-wrap: 100px 50px ;   */
-  border-radius: 5px;
+.Why-TechWave p{
+  padding: 5px;
+  line-height: 18px;
+  font-size: 16px;
 }
-.Quality .item {
-  height: 200px;
-  display: flex;
+.Why-TechWave .audio {
+  height: 800px;
+}
+.Why-TechWave img {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+.Why-TechWave .Choose {
+  height: 480px;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 280px 580px;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+}
+.Why-TechWave .item-1 {
+  height: 450px;
+  width: 250px;
   background-color: #351165;
   border-radius: 20px;
+  padding: 40px;
 }
-.Quality .resource {
-  height: 400px;
-  background-color: #fff;
-  display: flex;
+.Why-TechWave .item {
+  gap: 15px;
+  display: grid;
   align-items: center;
-  /* flex-wrap: 100px 50px ;   */
-  border-radius: 5px;
+  justify-content: center;
+  width: 630px;
+  height: 450px;
+}
+.Why-TechWave .item-2 {
+  height: 200px;
+  width: 630px;
+  background-color: #351165;
+  border-radius: 20px;
+  padding: 40px;
+}
+.Why-TechWave .resource {
+  height: 280px;
+  gap: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 655px 210px;
+}
+.Why-TechWave .access {
+  height: 250px;
+  width: 590px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #351165;
+}
+.Why-TechWave .access-1 {
+  height: 250px;
+  width: 260px; 
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #351165;
 }
 .content {
   height: 1100px;
