@@ -360,3 +360,58 @@ footer p {
   text-align: center;
   margin: 30px;
 }
+@media screen and (max-width: 576px) {
+  nav .btn-1::before {
+    background-image: url("../Images/hamburger-menu.png");
+  }
+  nav ul::before {
+    align-items: hidden;
+  }
+  .section-1 {
+    background-position: 0px 70px;
+    background-size: contain;
+  }
+  .section-1 .header {
+    background-position: 170px 10px;
+    background-size: 30%;
+  }
+  .section-1 .header .microphone img {
+    width: 20%;
+    margin-left: 12px;
+  }
+  .section-1 .header div h2 {
+    text-align: center;
+    height: 35px;
+    width: 50px;
+    font-size: 12px;
+  }
+  .Why-TechWave {
+    display: grid;
+    width: 450px;
+    height: 1500px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Why-TechWave .Choose .item-1 {
+    width: 400px;
+    height: 280px;
+    gap: 16px;
+  }
+  .Why-TechWave .Choose .item {
+    width: 400px;
+    height: 450px;
+    gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Why-TechWave .Choose .item-2 {
+    width: 400px;
+    height: 210px;
+    gap: 16px;
+  }
+  .Why-TechWave .Choose .item-3 {
+    width: 400px;
+    height: 210px;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+}
