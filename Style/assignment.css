@@ -223,21 +223,23 @@ nav .logo {
   padding: 40px;
 }
 .Why-TechWave .resource {
+  margin-left: 30px;
   height: 280px;
-  gap: 10px;
-  display: grid;
+  gap: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 655px 210px;
 }
 .Why-TechWave .access {
+  margin-left: 20px;
   height: 250px;
-  width: 590px;
+  width: 550px;
   padding: 40px;
   border-radius: 20px;
   background-color: #351165;
 }
 .Why-TechWave .access-1 {
+  margin-left: 65px;
   height: 250px;
   width: 260px;
   padding: 40px;
@@ -341,15 +343,22 @@ footer {
   justify-content: center;
 }
 footer h1 {
+  color: #ffffff;
   margin-bottom: 20px;
   font-size: 70px;
   text-align: center;
 }
 footer .media {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
 }
 footer .media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
@@ -360,7 +369,15 @@ footer p {
   text-align: center;
   margin: 30px;
 }
+.hide {
+  display: none !important;
+}
 @media screen and (max-width: 576px) {
+  body {
+    height: 5000px;
+  }
+  nav {
+  }
   nav .btn-1::before {
     background-image: url("../Images/hamburger-menu.png");
   }
@@ -368,38 +385,77 @@ footer p {
     align-items: hidden;
   }
   .section-1 {
-    background-position: 0px 70px;
+    height: 550px;
+    background-position: 0px 60px;
     background-size: contain;
   }
   .section-1 .header {
-    background-position: 170px 10px;
+    height: 200px;
+    background-position: 180px 70%;
     background-size: 30%;
   }
   .section-1 .header .microphone img {
-    width: 20%;
-    margin-left: 12px;
+    width: 23%;
+    margin-left: 20px;
   }
   .section-1 .header div h2 {
-    text-align: center;
-    height: 35px;
+    margin: 15px 0px 0px 55%;
+    height: 38px;
     width: 50px;
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .section-1 .hacks {
+    height: 250px;
+  }
+  .name h1,
+  p {
+    padding-top: 5px;
+  }
+  .podcast {
+    margin: 20px;
+    height: 580px;
+  }
+  .podcast .About {
+    margin: 8px;
+  }
+  .podcast .About h2 {
+    font-size: 34px;
+    padding: 3px;
+  }
+  .podcast .About p {
+    font-size: 24px;
+  }
+  .podcast .user {
+    display: grid;
+    text-align: center;
+    gap: 20px;
+    grid-template-columns: repeat(2, 2fr);
   }
   .Why-TechWave {
-    display: grid;
-    width: 450px;
     height: 1500px;
+  }
+  .Why-TechWave h1 {
+    font-size: 36px;
+  }
+  .Why-TechWave .audio {
+    height: 1398px;
+  }
+  .Why-TechWave .audio .Choose {
+    height: 800px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
     grid-template-columns: repeat(1, 1fr);
   }
   .Why-TechWave .Choose .item-1 {
     width: 400px;
     height: 280px;
-    gap: 16px;
+    align-content: center;
   }
   .Why-TechWave .Choose .item {
     width: 400px;
     height: 450px;
-    gap: 24px;
+    gap: 15px;
     grid-template-columns: repeat(1, 1fr);
   }
   .Why-TechWave .Choose .item-2 {
@@ -411,6 +467,97 @@ footer p {
     width: 400px;
     height: 210px;
     gap: 16px;
+  }
+  .Why-TechWave .resource {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    align-content: center;
+    justify-items: center;
+  }
+  .Why-TechWave .resource .access {
+    width: 400px;
+    height: 260px;
+  }
+  .Why-TechWave .resource .access-1 {
+    width: 400px;
+    height: 210px;
+  }
+  .content {
+    height: 1900px;
+  }
+  .content .Episodes {
+    height: 1400px;
+  }
+  .content .Episodes .episode {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .Episodes .episode .epi {
+    height: 410px;
+    width: 510px;
+  }
+    .content .Episodes .episode .epi h3{
+      font-size: 16px;
+    }
+      .content .Episodes .episode .epi p{
+        font-size: 11px;
+      }
+  .content .meet {
+    height: 420px;
+    display: grid;
+  }
+  .content .meet .host {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .meet .Alex {
+    width: 470px;
+    height: 330px;
+    border-radius: 20px;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content .meet .Kumar {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+  }
+  .content .meet .Kumar p {
+    font-size: 16px;
+  }
+  .content .meet .Alex .img {
+    width: 120px;
+    height: 120px;
+  }
+  footer {
+    background: #e39e9e;
+    /* height: 300px; */
+    background-position: center;
+    background-size: 150%;
+  }
+  footer h1 {
+    font-size: 36px;
+  }
+  footer .media {
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 100px) ;
+  }
+  footer a {
+    height: 30px;
+    /* display: grid; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+  }
+  footer p {
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
